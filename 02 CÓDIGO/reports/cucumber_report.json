@@ -1,0 +1,1580 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "rf-03_2-autenticación-de-usuarios;login-con-credenciales-válidas",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Login con credenciales válidas",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "el usuario está en la página de login",
+            "match": {
+              "location": "features\\step_definitions\\authentication.steps.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1081000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "el usuario ingresa su nombre de usuario y contraseña válidos",
+            "match": {
+              "location": "features\\step_definitions\\authentication.steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 113099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "hace clic en el botón \"Iniciar sesión\"",
+            "match": {
+              "location": "features\\step_definitions\\authentication.steps.js:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 189799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "el usuario debería ser redirigido al panel de control",
+            "match": {
+              "location": "features\\step_definitions\\authentication.steps.js:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 188899
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "rf-03_2-autenticación-de-usuarios;login-con-credenciales-inválidas",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Login con credenciales inválidas",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "el usuario está en la página de login",
+            "match": {
+              "location": "features\\step_definitions\\authentication.steps.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 86900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "el usuario ingresa un nombre de usuario o contraseña inválidos",
+            "match": {
+              "location": "features\\step_definitions\\authentication.steps.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 109500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "hace clic en el botón \"Iniciar sesión\"",
+            "match": {
+              "location": "features\\step_definitions\\authentication.steps.js:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 60299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "el usuario debería ver un mensaje de error \"Nombre de usuario o contraseña incorrectos\"",
+            "match": {
+              "location": "features\\step_definitions\\authentication.steps.js:66"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 102099
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "rf-03_2-autenticación-de-usuarios;login-con-campos-vacíos",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Login con campos vacíos",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 16,
+            "name": "el usuario está en la página de login",
+            "match": {
+              "location": "features\\step_definitions\\authentication.steps.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 188700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "el usuario deja el nombre de usuario o la contraseña en blanco",
+            "match": {
+              "location": "features\\step_definitions\\authentication.steps.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 152099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "hace clic en el botón \"Iniciar sesión\"",
+            "match": {
+              "location": "features\\step_definitions\\authentication.steps.js:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 341200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "el usuario debería ver un mensaje de error \"Este campo es obligatorio\"",
+            "match": {
+              "location": "features\\step_definitions\\authentication.steps.js:70"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 211099
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "rf-03_2-autenticación-de-usuarios;login-con-usuario-bloqueado",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "Login con usuario bloqueado",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 22,
+            "name": "el usuario está en la página de login",
+            "match": {
+              "location": "features\\step_definitions\\authentication.steps.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 61000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "el usuario ingresa el nombre de usuario y la contraseña de una cuenta bloqueada",
+            "match": {
+              "location": "features\\step_definitions\\authentication.steps.js:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 95500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "hace clic en el botón \"Iniciar sesión\"",
+            "match": {
+              "location": "features\\step_definitions\\authentication.steps.js:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 45100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "el usuario debería ver un mensaje de error \"Esta cuenta está bloqueada\"",
+            "match": {
+              "location": "features\\step_definitions\\authentication.steps.js:74"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 71299
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "rf-03_2-autenticación-de-usuarios",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "RF-03_2 Autenticación de Usuarios",
+    "tags": [],
+    "uri": "features\\authentication.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "rf-02-comprar-productos;realizar-un-pedido-con-productos-en-el-carrito",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Realizar un pedido con productos en el carrito",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "el usuario tiene productos en el carrito",
+            "match": {
+              "location": "features\\step_definitions\\buy.steps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 70100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "el usuario hace clic en el botón \"Realizar pedido\"",
+            "match": {
+              "location": "features\\step_definitions\\buy.steps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 93100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "ingresa la información de envío requerida",
+            "match": {
+              "location": "features\\step_definitions\\buy.steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 135999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "hace clic en el botón \"Confirmar pedido\"",
+            "match": {
+              "location": "features\\step_definitions\\buy.steps.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 79699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "el pedido debería ser creado en el sistema",
+            "match": {
+              "location": "features\\step_definitions\\buy.steps.js:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 70399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "el usuario debería ver un mensaje de confirmación \"Pedido realizado exitosamente\"",
+            "match": {
+              "location": "features\\step_definitions\\buy.steps.js:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 67000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "el carrito de compras debería estar vacío",
+            "match": {
+              "location": "features\\step_definitions\\buy.steps.js:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 72300
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "rf-02-comprar-productos",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "RF-02 Comprar Productos",
+    "tags": [],
+    "uri": "features\\buy.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "rf-01-gestión-de-productos;crear-un-nuevo-producto",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Crear un nuevo producto",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "el administrador está en la página de gestión de productos",
+            "match": {
+              "location": "features\\step_definitions\\products.steps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 73500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "el administrador ingresa un nombre de producto válido, una descripción válida, un precio y una cantidad en stock",
+            "match": {
+              "location": "features\\step_definitions\\products.steps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 91999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "hace clic en el botón \"Guardar\"",
+            "match": {
+              "location": "features\\step_definitions\\products.steps.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 123699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "el producto debería ser guardado en el sistema",
+            "match": {
+              "location": "features\\step_definitions\\products.steps.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 69999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "el administrador debería ver un mensaje de confirmación \"Producto creado exitosamente\"",
+            "match": {
+              "location": "features\\step_definitions\\products.steps.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 65799
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "rf-01-gestión-de-productos;crear-un-producto-con-datos-inválidos",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Crear un producto con datos inválidos",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "el administrador está en la página de gestión de productos",
+            "match": {
+              "location": "features\\step_definitions\\products.steps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 73800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "el administrador ingresa un nombre de producto inválido o deja campos obligatorios en blanco",
+            "match": {
+              "location": "features\\step_definitions\\products.steps.js:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 72099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "hace clic en el botón \"Guardar\"",
+            "match": {
+              "location": "features\\step_definitions\\products.steps.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 51000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "el producto no debería ser guardado en el sistema",
+            "match": {
+              "location": "features\\step_definitions\\products.steps.js:53"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 98899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "el administrador debería ver mensajes de error indicando los campos que deben ser corregidos",
+            "match": {
+              "location": "features\\step_definitions\\products.steps.js:57"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 178700
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "rf-01-gestión-de-productos;ver-lista-de-productos",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Ver lista de productos",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 18,
+            "name": "el administrador está en la página de gestión de productos",
+            "match": {
+              "location": "features\\step_definitions\\products.steps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 141399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "el administrador accede a la sección de lista de productos",
+            "match": {
+              "location": "features\\step_definitions\\products.steps.js:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 251800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "el administrador debería ver una tabla con los productos existentes en el sistema",
+            "match": {
+              "location": "features\\step_definitions\\products.steps.js:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 146800
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "rf-01-gestión-de-productos;editar-un-producto-existente",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "Editar un producto existente",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 23,
+            "name": "el administrador está en la página de gestión de productos",
+            "match": {
+              "location": "features\\step_definitions\\products.steps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 63199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "el administrador selecciona un producto de la lista para editar",
+            "match": {
+              "location": "features\\step_definitions\\products.steps.js:73"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 88699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "el administrador modifica los detalles del producto",
+            "match": {
+              "location": "features\\step_definitions\\products.steps.js:77"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 66100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "hace clic en el botón \"Guardar\"",
+            "match": {
+              "location": "features\\step_definitions\\products.steps.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 39400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "los cambios deberían ser guardados en el sistema",
+            "match": {
+              "location": "features\\step_definitions\\products.steps.js:82"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 125199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 28,
+            "name": "el administrador debería ver un mensaje de confirmación \"Producto actualizado exitosamente\"",
+            "match": {
+              "location": "features\\step_definitions\\products.steps.js:87"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 63099
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "rf-01-gestión-de-productos;eliminar-un-producto-existente",
+        "keyword": "Scenario",
+        "line": 30,
+        "name": "Eliminar un producto existente",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 31,
+            "name": "el administrador está en la página de gestión de productos",
+            "match": {
+              "location": "features\\step_definitions\\products.steps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 99600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 32,
+            "name": "el administrador selecciona un producto de la lista para eliminar",
+            "match": {
+              "location": "features\\step_definitions\\products.steps.js:93"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 93499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 33,
+            "name": "el administrador hace clic en el botón \"Eliminar\"",
+            "match": {
+              "location": "features\\step_definitions\\products.steps.js:97"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 105400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 34,
+            "name": "el producto debería ser eliminado del sistema",
+            "match": {
+              "location": "features\\step_definitions\\products.steps.js:105"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 1382000,
+              "error_message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n1 !== 0\n\n    + expected - actual\n\n    -1\n    +0\n\n    at World.<anonymous> (C:\\Users\\Miguel\\Downloads\\MiguelGutierrez_14569_G6_IR\\02 CÓDIGO\\features\\step_definitions\\products.steps.js:106:10)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "el administrador debería ver un mensaje de confirmación \"Producto eliminado exitosamente\"",
+            "match": {
+              "location": "features\\step_definitions\\products.steps.js:109"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "rf-01-gestión-de-productos",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "RF-01 Gestión de Productos",
+    "tags": [],
+    "uri": "features\\products.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "rf-03_1-registro-de-usuarios;registro-con-datos-válidos",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Registro con datos válidos",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "el usuario está en la página de registro",
+            "match": {
+              "location": "features\\step_definitions\\register.steps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 220299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "el usuario ingresa un correo electrónico válido, una contraseña válida y repite la contraseña correctamente",
+            "match": {
+              "location": "features\\step_definitions\\register.steps.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 140599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "hace clic en el botón \"Crear cuenta\"",
+            "match": {
+              "location": "features\\step_definitions\\register.steps.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 127100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "el usuario debería ser redirigido a una página de bienvenida o confirmación",
+            "match": {
+              "location": "features\\step_definitions\\register.steps.js:57"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 227899
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "rf-03_1-registro-de-usuarios;registro-con-datos-inválidos",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Registro con datos inválidos",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "el usuario está en la página de registro",
+            "match": {
+              "location": "features\\step_definitions\\register.steps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 52800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "el usuario ingresa un correo electrónico inválido o contraseñas que no coinciden",
+            "match": {
+              "location": "features\\step_definitions\\register.steps.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 76500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "hace clic en el botón \"Crear cuenta\"",
+            "match": {
+              "location": "features\\step_definitions\\register.steps.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 67400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "el usuario debería ver un mensaje de error correspondiente, como \"Correo electrónico inválido\" o \"Las contraseñas no coinciden\"",
+            "match": {
+              "location": "features\\step_definitions\\register.steps.js:61"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 865499,
+              "error_message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\u001b[32m+ actual\u001b[39m \u001b[31m- expected\u001b[39m\n\n\u001b[32m+\u001b[39m 'Correo electrónico inválido'\n\u001b[31m-\u001b[39m 'Correo electrónico incorrecto o contraseñas no coinciden'\n                        ^\n    + expected - actual\n\n    -Correo electrónico inválido\n    +Correo electrónico incorrecto o contraseñas no coinciden\n\n    at World.<anonymous> (C:\\Users\\Miguel\\Downloads\\MiguelGutierrez_14569_G6_IR\\02 CÓDIGO\\features\\step_definitions\\register.steps.js:63:10)"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "rf-03_1-registro-de-usuarios;registro-con-una-cuenta-existente",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Registro con una cuenta existente",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 16,
+            "name": "el usuario está en la página de registro",
+            "match": {
+              "location": "features\\step_definitions\\register.steps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 39600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "el usuario ingresa un correo electrónico que ya está registrado en el sistema",
+            "match": {
+              "location": "features\\step_definitions\\register.steps.js:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 76999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "hace clic en el botón \"Crear cuenta\"",
+            "match": {
+              "location": "features\\step_definitions\\register.steps.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 99100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "el usuario debería ver un mensaje de error \"Este correo electrónico ya está registrado\"",
+            "match": {
+              "location": "features\\step_definitions\\register.steps.js:70"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 90900
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "rf-03_1-registro-de-usuarios",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "RF-03_1 Registro de Usuarios",
+    "tags": [],
+    "uri": "features\\register.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "rf-05-calificación-y-reseñas-de-productos;escribir-una-reseña-para-un-producto",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Escribir una reseña para un producto",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "el usuario ha comprado un producto",
+            "match": {
+              "location": "features\\step_definitions\\review.steps.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 76999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "el usuario está en la página del producto",
+            "match": {
+              "location": "features\\step_definitions\\review.steps.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 70099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "el usuario escribe una reseña en el campo de texto",
+            "match": {
+              "location": "features\\step_definitions\\review.steps.js:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 80299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "hace clic en el botón \"Enviar reseña\"",
+            "match": {
+              "location": "features\\step_definitions\\review.steps.js:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 116899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "la reseña debería ser guardada en el sistema",
+            "match": {
+              "location": "features\\step_definitions\\review.steps.js:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 116499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "el usuario debería ver un mensaje de confirmación \"Reseña enviada exitosamente\"",
+            "match": {
+              "location": "features\\step_definitions\\review.steps.js:58"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 121699
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "rf-05-calificación-y-reseñas-de-productos;ver-reseñas-de-un-producto",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Ver reseñas de un producto",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "el usuario está en la página del producto",
+            "match": {
+              "location": "features\\step_definitions\\review.steps.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 57699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "el usuario desplaza hacia la sección de reseñas",
+            "match": {
+              "location": "features\\step_definitions\\review.steps.js:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 73300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "el usuario debería ver una lista de reseñas existentes para el producto",
+            "match": {
+              "location": "features\\step_definitions\\review.steps.js:66"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 64700
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "rf-05-calificación-y-reseñas-de-productos;editar-una-reseña-existente",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Editar una reseña existente",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 17,
+            "name": "el usuario ha escrito una reseña para un producto",
+            "match": {
+              "location": "features\\step_definitions\\review.steps.js:70"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 67599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "el usuario está en la página del producto",
+            "match": {
+              "location": "features\\step_definitions\\review.steps.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 33800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "el usuario hace clic en el botón \"Editar reseña\"",
+            "match": {
+              "location": "features\\step_definitions\\review.steps.js:76"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 60699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "modifica el contenido de la reseña",
+            "match": {
+              "location": "features\\step_definitions\\review.steps.js:82"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 57500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "hace clic en el botón \"Guardar cambios\"",
+            "match": {
+              "location": "features\\step_definitions\\review.steps.js:88"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 57500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "los cambios en la reseña deberían ser guardados en el sistema",
+            "match": {
+              "location": "features\\step_definitions\\review.steps.js:95"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 64599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "el usuario debería ver un mensaje de confirmación \"Reseña actualizada exitosamente\"",
+            "match": {
+              "location": "features\\step_definitions\\review.steps.js:99"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 57099
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "rf-05-calificación-y-reseñas-de-productos;eliminar-una-reseña-existente",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "Eliminar una reseña existente",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 26,
+            "name": "el usuario ha escrito una reseña para un producto",
+            "match": {
+              "location": "features\\step_definitions\\review.steps.js:70"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 46099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "el usuario está en la página del producto",
+            "match": {
+              "location": "features\\step_definitions\\review.steps.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 28,
+            "name": "el usuario hace clic en el botón \"Eliminar reseña\"",
+            "match": {
+              "location": "features\\step_definitions\\review.steps.js:103"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 70199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "confirma la eliminación",
+            "match": {
+              "location": "features\\step_definitions\\review.steps.js:109"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 100699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "la reseña debería ser eliminada del sistema",
+            "match": {
+              "location": "features\\step_definitions\\review.steps.js:116"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 387500,
+              "error_message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\ntrue !== false\n\n    + expected - actual\n\n    -true\n    +false\n\n    at World.<anonymous> (C:\\Users\\Miguel\\Downloads\\MiguelGutierrez_14569_G6_IR\\02 CÓDIGO\\features\\step_definitions\\review.steps.js:117:10)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "el usuario debería ver un mensaje de confirmación \"Reseña eliminada exitosamente\"",
+            "match": {
+              "location": "features\\step_definitions\\review.steps.js:120"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "rf-05-calificación-y-reseñas-de-productos",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "RF-05 Calificación y Reseñas de Productos",
+    "tags": [],
+    "uri": "features\\review.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "rf-04-carrito-de-compras;agregar-un-producto-al-carrito",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Agregar un producto al carrito",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "el usuario está en la página de productos",
+            "match": {
+              "location": "features\\step_definitions\\shoppingcart.steps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 71199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "el usuario selecciona un producto y hace clic en el botón \"Agregar al carrito\"",
+            "match": {
+              "location": "features\\step_definitions\\shoppingcart.steps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 71699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "el producto debería ser añadido al carrito",
+            "match": {
+              "location": "features\\step_definitions\\shoppingcart.steps.js:29"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 182999,
+              "error_message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n0 !== 1\n\n    + expected - actual\n\n    -0\n    +1\n\n    at World.<anonymous> (C:\\Users\\Miguel\\Downloads\\MiguelGutierrez_14569_G6_IR\\02 CÓDIGO\\features\\step_definitions\\shoppingcart.steps.js:31:10)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "el usuario debería ver un mensaje de confirmación \"Producto agregado al carrito\"",
+            "match": {
+              "location": "features\\step_definitions\\shoppingcart.steps.js:34"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "rf-04-carrito-de-compras;ver-el-carrito-de-compras",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Ver el carrito de compras",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "el usuario tiene productos en el carrito",
+            "match": {
+              "location": "features\\step_definitions\\buy.steps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 53600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "el usuario hace clic en el icono del carrito",
+            "match": {
+              "location": "features\\step_definitions\\shoppingcart.steps.js:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 74800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "el usuario debería ser redirigido a la página del carrito de compras",
+            "match": {
+              "location": "features\\step_definitions\\shoppingcart.steps.js:47"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 221499,
+              "error_message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\u001b[32m+ actual\u001b[39m \u001b[31m- expected\u001b[39m\n\n\u001b[32m+\u001b[39m 'carrito'\n\u001b[31m-\u001b[39m 'pagina_incorrecta'\n    + expected - actual\n\n    -carrito\n    +pagina_incorrecta\n\n    at World.<anonymous> (C:\\Users\\Miguel\\Downloads\\MiguelGutierrez_14569_G6_IR\\02 CÓDIGO\\features\\step_definitions\\shoppingcart.steps.js:49:10)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "el usuario debería ver una lista de los productos añadidos al carrito",
+            "match": {
+              "location": "features\\step_definitions\\shoppingcart.steps.js:52"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "rf-04-carrito-de-compras;actualizar-cantidad-de-un-producto-en-el-carrito",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Actualizar cantidad de un producto en el carrito",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 16,
+            "name": "el usuario está en la página del carrito de compras",
+            "match": {
+              "location": "features\\step_definitions\\shoppingcart.steps.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 57000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "el usuario cambia la cantidad de un producto en el carrito",
+            "match": {
+              "location": "features\\step_definitions\\shoppingcart.steps.js:57"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 111400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "hace clic en el botón \"Actualizar carrito\"",
+            "match": {
+              "location": "features\\step_definitions\\shoppingcart.steps.js:63"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 53499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "la cantidad del producto debería ser actualizada",
+            "match": {
+              "location": "features\\step_definitions\\shoppingcart.steps.js:68"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 175899,
+              "error_message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n2 !== 1\n\n    + expected - actual\n\n    -2\n    +1\n\n    at World.<anonymous> (C:\\Users\\Miguel\\Downloads\\MiguelGutierrez_14569_G6_IR\\02 CÓDIGO\\features\\step_definitions\\shoppingcart.steps.js:70:10)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "el usuario debería ver un mensaje de confirmación \"Cantidad actualizada\"",
+            "match": {
+              "location": "features\\step_definitions\\shoppingcart.steps.js:73"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "rf-04-carrito-de-compras;eliminar-un-producto-del-carrito",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "Eliminar un producto del carrito",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 23,
+            "name": "el usuario está en la página del carrito de compras",
+            "match": {
+              "location": "features\\step_definitions\\shoppingcart.steps.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 70000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 24,
+            "name": "el usuario hace clic en el botón \"Eliminar\" junto a un producto",
+            "match": {
+              "location": "features\\step_definitions\\shoppingcart.steps.js:78"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 108200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "el producto debería ser eliminado del carrito",
+            "match": {
+              "location": "features\\step_definitions\\shoppingcart.steps.js:85"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 177199,
+              "error_message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n1 !== 2\n\n    + expected - actual\n\n    -1\n    +2\n\n    at World.<anonymous> (C:\\Users\\Miguel\\Downloads\\MiguelGutierrez_14569_G6_IR\\02 CÓDIGO\\features\\step_definitions\\shoppingcart.steps.js:87:10)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "el usuario debería ver un mensaje de confirmación \"Producto eliminado del carrito\"",
+            "match": {
+              "location": "features\\step_definitions\\shoppingcart.steps.js:90"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "rf-04-carrito-de-compras",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "RF-04 Carrito de Compras",
+    "tags": [],
+    "uri": "features\\shoppingcart.feature"
+  }
+]
